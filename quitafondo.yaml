@@ -11,7 +11,7 @@ spec:
   build:
     builder: "openfunction/gcp-builder:v1"
     env:
-      GOOGLE_FUNCTION_TARGET: "quitafondo"
+      GOOGLE_FUNCTION_TARGET: "main"
       GOOGLE_FUNCTION_SIGNATURE_TYPE: "http"
       GOOGLE_FUNCTION_SOURCE: "main.py"
     srcRepo:
