@@ -1,2 +1,2 @@
-def hello_world(request):
+def main(request):
     return request
