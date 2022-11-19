@@ -22,7 +22,7 @@ spec:
     template:
       containers:
         - name: function # DO NOT change this
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
   route:
     gatewayRef:
       name: openfunction
