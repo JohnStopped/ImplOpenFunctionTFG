@@ -26,7 +26,7 @@ def quitaFondo(img_src):
 
 def main(request):
     if len(request.files.to_dict(flat=True))==0:
-            return make_response({"msg": "No has enviado fichero con la imagen"})
+            return "No has enviado fichero con la imagen"
 
     else:        
         # Recoger imagen de la petición
@@ -41,3 +41,6 @@ def main(request):
         # Codificamos la imagen en png
         res_array_img = cv2.imencode('.png',res_img)[1] # [0] es un bool que indica el resultado de la operación
 
+        # Preparamos la respuesta con la imagen
+        response = res_array_img.tobytes()
+        return response
