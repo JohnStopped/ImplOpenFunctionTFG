@@ -16,7 +16,7 @@ spec:
       GOOGLE_FUNCTION_SOURCE: "main.py"
     srcRepo:
       url: "https://github.com/JohnStopped/ImplOpenFunctionTFG.git"
-      revision: "main"
+      revision: "prueba-kn-code"
   serving:
     runtime: knative # default to knative
     template:
@@ -33,4 +33,4 @@ spec:
               type: PathPrefix
               value: /quitafondo
     hostnames:
-    - "sample.ofn.io"    
+    - "sample.ofn.io"   
