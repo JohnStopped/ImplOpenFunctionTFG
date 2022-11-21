@@ -26,7 +26,7 @@ def quitaFondo(img_src):
 
 def main(request):
     if len(request.files.to_dict(flat=True))==0:
-            return "No has enviado fichero con la imagen"
+            return "No has enviado fichero con la imagen\n"
 
     else:        
         # Recoger imagen de la petición
