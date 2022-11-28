@@ -27,4 +27,15 @@ spec:
     template:
       containers:
         - name: function # DO NOT change this
-          imagePullPolicy: Always      
+          imagePullPolicy: Always 
+  route:
+    gatewayRef:
+      name: openfunction
+      namespace: openfunction
+    rules:
+      - matches:
+          - path:
+              type: PathPrefix
+              value: /quitafondo
+    hostnames:
+    - "sample.ofn.io"          
