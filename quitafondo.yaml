@@ -21,12 +21,12 @@ spec:
     scaleOptions:
       knative:
         autoscaling:
-          autoscaling.knative.dev/min-scale: 0
-          autoscaling.knative.dev/max-scale: 150
+          autoscaling.knative.dev/min-scale: "0"
+          autoscaling.knative.dev/max-scale: "150"
           autoscaling.knative.dev/initial-scale: "0"
           autoscaling.knative.dev/scale-down-delay: "0"
           autoscaling.knative.dev/metric: "rps"
-          autoscaling.knative.dev/target: 2
+          autoscaling.knative.dev/target: "2"
     runtime: knative # default to knative
     template:
       containers:
